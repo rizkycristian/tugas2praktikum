@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Toko Cici Mey</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      text-align: center;
+    }
+
+    .navbar {
+      background: #eee;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      color: #d94f6b;
+      text-decoration: underline;
+    }
+
+    .search-box {
+      margin: 15px;
+    }
+    .search-box input {
+      padding: 8px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .search-box button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      background: #d94f6b;
+      color: #fff;
+      cursor: pointer;
+    }
+    .search-box button:hover {
+      background: #b63b53;
+    }
+
+    .produk {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 200px;
+      padding: 10px;
+      transition: 0.2s;
+    }
+    .card:hover {
+      background: #f9f0f2;
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+    .card p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .iklan {
+      background: #ffeaea;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px auto;
+      width: 80%;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #eee;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="dashboard.html">Beranda</a>
+    <a href="#produk">Data Produk</a>
+    <a href="admin.html">Admin</a>
+    <a href="#profil">Profile</a>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" placeholder="Cari produk...">
+    <button>Cari</button>
+  </div>
+
+  <h1>Selamat Datang di Toko Bahan Kue Cici Mey</h1>
+
+  <div class="produk" id="produk">
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0573/8476/3576/files/1._Tepung_Terigu_All-Purpose_Flour.webp?v=1732184955" alt="Tepung">
+      <h3>Tepung</h3>
+      <p>Rp 18.000 / kg</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDnyPvTd_6UT0t5x26xr3x1rwFMQSBetxBtA&s" alt="Gula">
+      <h3>Gula</h3>
+      <p>Rp 12.500 / kg</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfv7xLpKeMtj2sv43ibYfxz65ofFxN586G5g&s" alt="Mentega">
+      <h3>Mentega</h3>
+      <p>Rp 28.000 / 200g</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVFq4VjWnWafqgT85BP2by_wpMMhN87hmpEA&s" alt="Cokelat">
+      <h3>Cokelat</h3>
+      <p>Rp 32.000 / 500g</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0lYtZ3MwchchKJ_GKldFxfF5Uo0ZsAsWjFQ&s" alt="Keju">
+      <h3>Keju</h3>
+      <p>Rp 24.000 / 500g</p>
+    </div>
+        <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHwRSHl-Na6_Fcr2BA6zGwnn9hRmmS1hUFA&s" alt="toping">
+      <h3>Toping</h3>
+      <p>Rp 5.000 / bks</p>
+    </div>
+
+  </div>
+  <div class="iklan">
+    Promo Spesial: Beli 2 Tepung Gratis 1 Toping!
+  </div>
+  <footer>
+    &copy; 2025 Toko Bahan Kue Cici Mey
+  </footer>
+</body>
+</html>

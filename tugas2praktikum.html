@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Toko Bahan Kue Cici Mey</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .login-box {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+
+    }
+    .login-box h1 {
+      color: brown;
+
+    }
+    .login-box input{
+      display: block;
+      margin: 10px;
+      padding: 8px;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .login-box button{
+      background: pink;
+      border-radius: 6px;
+      font-size: 16px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box" style="width: 600px; margin:0 auto;">
+      <h1>Login - Toko Bahan Kue Cici Mey</h1>
+
+      <form onsubmit="return masuk()">
+        <label>
+          <span class="label-text">Username</span>
+          <input type="text" placeholder="nama pengguna" required/>
+        </label><br>
+
+        <label>
+          <span class="label-text">Password</span>
+          <input type="password" placeholder="kata sandi" required />
+        </label><br>
+
+        <button type="submit">Login</button>
+
+        <p><a href="admin.html">Halaman Admin</a></p>
+      </form>
+    </div>
+
+  <script>
+    function masuk() {
+        window.location.href = 'dashboard.html';
+        return false;
+    }
+  </script>
+</body>
+</html>
